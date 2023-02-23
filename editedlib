@@ -200,6 +200,7 @@ function Kavo.CreateLib(kavName, themeList)
     local coverup = Instance.new("Frame")
     local title = Instance.new("TextLabel")
     local close = Instance.new("ImageButton")
+    local Profile = Instance.new("ImageLabel")
     local MainSide = Instance.new("Frame")
     local sideCorner = Instance.new("UICorner")
     local coverup_2 = Instance.new("Frame")
@@ -268,6 +269,16 @@ function Kavo.CreateLib(kavName, themeList)
     title.TextColor3 = Color3.fromRGB(245, 245, 245)
     title.TextSize = 16.000
     title.TextXAlignment = Enum.TextXAlignment.Left
+    
+    Profile.Name = "profile"
+    Profile.Parent = MainHeader
+    Profile.BackgroundTransparency = 1.000
+    Profile.Position = UDim2.new(0.549999988, 0, 0.137999997, 0)
+    Profile.Size = UDim2.new(0, 21, 0, 21)
+    Profile.ZIndex = 2
+    Profile.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.UserId.."&width=420&height=420&format=png"
+    Profile.ImageRectOffset = Vector2.new(284, 4)
+    Profile.ImageRectSize = Vector2.new(24, 24)
 
     close.Name = "close"
     close.Parent = MainHeader
